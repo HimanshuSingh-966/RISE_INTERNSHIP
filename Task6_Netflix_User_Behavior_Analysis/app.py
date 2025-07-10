@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 
 def load_data():
-    df = pd.read_csv("/teamspace/studios/this_studio/TS_RISE_DSA_2501/Task6_Netflix_User_Behavior_Analysis/netflix_behavior_merged.csv", parse_dates=['Start Time', 'Date'], low_memory=False)
+    df = pd.read_csv("Task6_Netflix_User_Behavior_Analysis/netflix_behavior_merged.csv", parse_dates=['Start Time', 'Date'], low_memory=False)
 
     # Drop unwanted or problematic columns (like nested dicts, JSONs, mixed types)
     columns_to_drop = [
