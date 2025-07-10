@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 # Load dataset
-df = pd.read_csv("/teamspace/studios/this_studio/TS_RISE_DSA_2501/Task4_COVID_19_Data_Analysis/country_wise_latest.csv")
+df = pd.read_csv("Task4_COVID_19_Data_Analysis/country_wise_latest.csv")
 
 st.title("🌍 COVID-19 Global Data Dashboard")
 
