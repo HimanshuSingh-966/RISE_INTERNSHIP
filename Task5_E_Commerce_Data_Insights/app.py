@@ -10,7 +10,7 @@ st.title("🛍️ E-Commerce Data Insights Dashboard")
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/teamspace/studios/this_studio/TS_RISE_DSA_2501/Task5_E_Commerce_Data_Insights/e_commerce_data.csv", encoding='ISO-8859-1')
+    df = pd.read_csv("Task5_E_Commerce_Data_Insights/e_commerce_data.csv", encoding='ISO-8859-1')
     df.dropna(subset=["CustomerID"], inplace=True)
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     df['Year'] = df['InvoiceDate'].dt.year
