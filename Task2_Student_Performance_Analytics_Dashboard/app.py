@@ -16,7 +16,7 @@ st.markdown("""
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("/teamspace/studios/this_studio/TS_RISE_DSA_2501/Task2_Student_Performance_Analytics_Dashboard/student-por.csv")
+    return pd.read_csv("Task2_Student_Performance_Analytics_Dashboard/student-por.csv")
 
 df = load_data()
 
