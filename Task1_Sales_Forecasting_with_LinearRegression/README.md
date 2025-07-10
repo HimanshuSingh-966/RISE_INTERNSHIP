@@ -9,8 +9,8 @@ The primary objective of this project is to build a predictive model that can fo
 
 ## Datasets
 
--   `preprocessing/Online_Sales_Data.csv`: The initial raw dataset containing online sales information.
--   `Cleaned_sales_data.csv`: The final, processed dataset used for training the model. This dataset is the result of the preprocessing and cleaning steps.
+- `preprocessing/Online_Sales_Data.csv`: The initial raw dataset containing online sales information.
+- `Cleaned_sales_data.csv`: The final, processed dataset used for training the model. This dataset is the result of the preprocessing and cleaning steps.
 
 ## Methodology
 
@@ -20,12 +20,12 @@ The project is structured into two main phases: Data Preprocessing and Modeling.
 
 The raw sales data undergoes a series of cleaning and transformation steps to prepare it for the modeling phase. These steps are detailed in the notebooks within the `preprocessing/` directory.
 
--   **`preprocessing/1_data_preprocessing.ipynb`**: This notebook handles the initial data cleaning tasks such as handling missing values, correcting data types, and feature engineering.
--   **`preprocessing/2_outlier_removing.ipynb`**: This notebook focuses on identifying and removing outliers from the dataset to improve model performance and accuracy.
+- `preprocessing/1_data_preprocessing.ipynb`: This notebook handles the initial data cleaning tasks such as handling missing values, correcting data types, and feature engineering.
+- `preprocessing/2_outlier_removing.ipynb`: This notebook focuses on identifying and removing outliers from the dataset to improve model performance and accuracy.
 
 ### 2. Modeling
 
--   **`sales_forecasting.ipynb`**: This notebook contains the core logic for the sales forecasting model. It loads the `Cleaned_sales_data.csv`, splits the data into training and testing sets, trains a Linear Regression model, and evaluates its performance.
+- `sales_forecasting.ipynb`: This notebook contains the core logic for the sales forecasting model. It loads the `Cleaned_sales_data.csv`, splits the data into training and testing sets, trains a Linear Regression model, and evaluates its performance.
 
 ## How to Run the Project
 
@@ -35,6 +35,12 @@ To replicate the project, follow these steps:
 2.  Ensure you have a Python environment with necessary libraries such as Pandas, NumPy, Scikit-learn, and Jupyter Notebook installed.
 3.  Navigate to the `Task1_Sales_Forecasting_with_LinearRegression/` directory.
 4.  To understand the data preparation process, run the notebooks in the `preprocessing/` directory sequentially:
-    -   `1_data_preprocessing.ipynb`
-    -   `2_outlier_removing.ipynb`
+    - `1_data_preprocessing.ipynb`
+    - `2_outlier_removing.ipynb`
 5.  Run the `sales_forecasting.ipynb` notebook to train the model and see the forecasting results.
+
+## Output
+
+Here's a visualization of the actual versus predicted daily revenue, demonstrating the model's forecasting capability:
+
+![Actual vs Predicted Daily Revenue](https://raw.githubusercontent.com/HimanshuSingh-966/RISE_INTERNSHIP/main/Task1_Sales_Forecasting_with_LinearRegression/images/Screenshot%202025-07-10%20123632.png)
